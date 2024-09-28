@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: #f2f2f2;
+}
+html {
+  font-size: 62.5%;
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: #f2f2f2;
+}
+.container {
+  width: 40rem;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.1);
+}
+/* title  */
+.container .form-title {
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 10rem;
+  background: linear-gradient(-135deg, #ff8e24 10%, #3319cf 80%);
+  text-align: center;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.container form {
+  padding: 1rem 3rem 5rem 3rem;
+}
+
+.container form .field {
+  height: 5rem;
+  width: 100%;
+  margin-top: 2rem;
+  position: relative;
+}
+.container form .field input {
+  height: 100%;
+  width: 100%;
+  padding-left: 2rem;
+  outline: none;
+  border-radius: 2.5rem;
+  border: 1px solid lightgrey;
+  transition: all 0.3s ease;
+  font-size: 1.7rem;
+}
+.container form .field input:focus,
+.container form .field input:valid {
+  border-color: #5d31ac;
+}
+.container form .field label {
+  color: #999;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2rem;
+  pointer-events: none;
+  font-size: 1.7rem;
+  transition: all 0.3s ease;
+}
+
+.container form .field input:focus ~ label,
+.container form .field input:valid ~ label {
+  top: 0;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #5d31ac;
+  background-color: #fff;
+  padding: 0 0.25rem;
+}
+
+.container .passlink {
+  color: #5d31ac;
+  margin: 1.5rem 0 0 2rem;
+  font-size: 1.5rem;
+}
+
+.container .signup-link {
+  color: #262626;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+.container .signup-link a,
+.container .passlink a{
+  color: #5d31ac;
+  text-decoration: none;
+}
+.container .signup-link a:hover,
+.container .passlink a:hover{
+
+  text-decoration: underline;
+}
+
+.container form .field input[type="submit"] {
+  color: #fff;
+  background: linear-gradient(-135deg, #ff8e24 10%, #3319cf 80%);
+  font-size: 1.8rem;
+  font-weight: 600;
+  border: none;
+  padding-left: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.container form .field input[type="submit"]:active {
+  transform: scale(0.9);
+}
